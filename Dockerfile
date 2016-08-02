@@ -14,7 +14,7 @@
 # jenkins-gcp-leader
 #
 # VERSION   0.0.2
-FROM jenkins:1.625.3
+FROM jenkins:1.651.3
 
 MAINTAINER Evan Brown <evanbrown@google.com>
 
