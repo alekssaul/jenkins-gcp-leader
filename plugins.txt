@@ -6,6 +6,7 @@ credentials:2.1.4
 docker-commons:1.4.0
 docker-workflow:1.7
 docker-build-step:1.35
+docker-build-publish:1.3.1
 durable-task:1.12
 git:2.5.3
 git-client:1.19.7
