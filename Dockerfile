@@ -25,9 +25,7 @@ COPY workflow-version.txt /usr/share/jenkins/workflow-version.txt
 RUN sed -i "s/@VERSION@/`cat /usr/share/jenkins/workflow-version.txt`/g" /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 
-# Copy Jenkins configk
-COPY jenkins/jobs /usr/share/jenkins/ref/jobs 
-RUN chown -R jenkins:jenkins /usr/share/jenkins/ref
+RUN chown -R jenkins:jenkins /usr/share/jenkins
 
 # Install gcloud
 ENV CLOUDSDK_PYTHON_SITEPACKAGES 1
