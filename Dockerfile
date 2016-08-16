@@ -44,4 +44,4 @@ ENV PATH /usr/local/bin/google-cloud-sdk/bin:$PATH
 COPY start.sh /usr/local/bin/start.sh
 RUN chown jenkins /usr/local/bin/start.sh
 USER jenkins
-ENTRYPOINT ["/usr/local/bin/start.sh"]
+ENTRYPOINT ["/usr/local/bin/jenkins.sh"]
